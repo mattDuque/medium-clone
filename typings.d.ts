@@ -1,6 +1,7 @@
 export interface Post {
     _id: string;
     _createdAt: string;
+    timeToRead: string;
     title: string;
     author: {
         name: string;
@@ -16,4 +17,9 @@ export interface Post {
         current: string;
     };
     body: [object];
+}
+
+export interface Categories {
+    title: string;
+    description: string;
 }

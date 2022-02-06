@@ -53,6 +53,12 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      name: 'timeToRead',
+      title: 'Time to read',
+      description: 'must be in format "x min" ',
+      type: 'string',
+    },
   ],
 
   preview: {
