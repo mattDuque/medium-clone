@@ -36,11 +36,9 @@ function Post({ post }: Props) {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormInput>({
     resolver: yupResolver(Schema),
   })
-
-  console.log(dateFormatter(post.comments[0]._createdAt))
 
   const onSubmit: SubmitHandler<FormInput> = data => {
     fetch("/api/createComment", {
@@ -54,7 +52,7 @@ function Post({ post }: Props) {
       })
     reset()
   }
-  console.log(post.comments)
+ 
   return (
     <main>
       <Header />

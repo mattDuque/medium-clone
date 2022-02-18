@@ -36,10 +36,7 @@ export default function Home({ posts, categories }: Props) {
             </p>
             <div className="pb-6">
               {categories.map(category => (
-                <p
-                  className="text-[#a4a4a4] text-sm border border-[#e6e6e6] rounded-sm py-2 px-4 inline-flex m-1"
-                  onClick={() => console.log(category.description)}
-                >
+                <p className="text-[#a4a4a4] text-sm border border-[#e6e6e6] rounded-sm py-2 px-4 inline-flex m-1">
                   {category.title}
                 </p>
               ))}
