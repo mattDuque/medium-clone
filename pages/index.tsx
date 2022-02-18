@@ -27,7 +27,7 @@ export default function Home({ posts, categories }: Props) {
         <div className="flex flex-col-reverse max-w-7xl mx-auto sm: md:flex-row">
           <div className="w-full md:w-2/3 px-6 md:pl-14 ">
             {posts.map(post => (
-              <PostCard data={post} />
+              <PostCard post={post} />
             ))}
           </div>
           <div className="w-full px-6 mb-10 md:w-1/3 md:pr-14 md:pl-0">
